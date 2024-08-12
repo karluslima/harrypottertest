@@ -1,0 +1,23 @@
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  background-color: #000;
+  margin: 0 auto;
+  text-align: center;
+
+  .header {
+    background-image: url('https://harrypottershop.co.uk/cdn/shop/t/22/assets/smoke.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+
+    .title {
+      padding-top: 30px;
+      color: aliceblue;
+      font-size: 48px;
+    }
+  }
+}
