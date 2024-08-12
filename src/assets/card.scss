@@ -1,20 +1,23 @@
-// sm	640px	@media (min-width: 640px) { ... }
-// md	768px	@media (min-width: 768px) { ... }
-// lg	1024px	@media (min-width: 1024px) { ... }
-// xl	1280px	@media (min-width: 1280px) { ... }
-
 .characters {
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  font-size: 18px;
   padding: 0 16px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
   .character {
     border: 1px solid #a85;
     padding: 	16px;
     color: #fff;
     text-align: left;
-    line-height: 24px;
+    line-height: 32px;
 
     b {
       color: #a85;
@@ -25,7 +28,7 @@
       height: 227px;
       margin: 0 auto 20px;
       position: relative;
-      width: 163px;
+      width: 200px;
 
       img {
         max-height: 230px;
@@ -43,6 +46,8 @@
       position: absolute;
       bottom: 0;
       font-size: 1.2rem;
+      text-align: center;
+      width: 100%;
     }
   }
 }
